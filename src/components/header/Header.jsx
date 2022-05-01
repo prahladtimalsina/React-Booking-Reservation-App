@@ -1,6 +1,9 @@
 import {
   faBed,
+  faCalendarDay,
+  faCalendarDays,
   faCar,
+  faPerson,
   faPlane,
   faTaxi,
 } from "@fortawesome/free-solid-svg-icons";
@@ -39,6 +42,30 @@ const Header = () => {
           with a free PrahladBooking Account!.
         </p>
         <button className="headerBtn">Sign in / Register</button>
+        <div className="headerSearch">
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input
+              type="text"
+              name=""
+              placeholder="Where are you going"
+              id=""
+              className="headerSearchInput"
+            />
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+            <span className="headerSearchText">date to date</span>
+          </div>
+          <div className="headerSearchItem">
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+            <span className="headerSearchText">2 adults 2 childern 1 room</span>
+          </div>
+
+          <div className="headerSearchItem">
+            <div className="headerBtn">Search</div>
+          </div>
+        </div>
       </div>
     </div>
   );
